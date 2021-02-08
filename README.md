@@ -1,4 +1,4 @@
-# Movies-2
+# Movies
  
 | Route | HTTP Verb | POST body | Description |
 | --- | --- | --- | --- |
