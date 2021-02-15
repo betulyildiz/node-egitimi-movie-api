@@ -68,7 +68,20 @@ router.get('/:movie_id',(req,res,next)=>{
 
 //Tüm Filmleri Listeleme
 router.get('/',(req,res) =>{
-    const promise = Movie.find({});
+    //normalde find kullanabiliriz.Ama filmin yönetmenini de getirmek için aggregate kullanıyoruz.
+    const promise = Movie.aggregate([
+        {
+            $lookup : {
+                from : 'directors',
+                localField : 'director_id',
+                foreignField : '_id',
+                as : 'director'
+            }
+        },
+        {
+            $unwind : '$director'
+        }
+    ]);
 
     promise.then((data)=>{
        res.json(data);
