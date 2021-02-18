@@ -1,5 +1,4 @@
-[![Build Status]([![Build Status](https://travis-ci.com/betulyildiz/node-egitimi-movie-api.svg?branch=main)](https://travis-ci.com/betulyildiz/node-egitimi-movie-api))]
-
+[![Build Status](https://travis-ci.com/betulyildiz/node-egitimi-movie-api.svg?branch=main)](https://travis-ci.com/betulyildiz/node-egitimi-movie-api)
 # Movies2
  
 | Route | HTTP Verb | POST body | Description |
