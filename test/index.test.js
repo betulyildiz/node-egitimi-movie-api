@@ -5,7 +5,7 @@ const server = require('../app');
 
 chai.use(chaiHttp);
 
-//Her descrip içinde birden fazla it() olabilir.Bunların içinde test yapabiliriz.
+//Her describe içinde birden fazla it() olabilir.Bunların içinde test yapabiliriz.
 describe('Node Server',() => {
    it('(GET/) anasayfayı döndürür',(done) => {
       chai.request(server)
