@@ -6,7 +6,6 @@ chai.use(chaiHttp);
 let token,movieId;
 
 
-
 //Her descrip içinde birden fazla it() olabilir.Bunların içinde test yapabiliriz.
 //before fonk. ile testler başlamadan işlem yapabiliyoruz.
 describe('/api/movies tests',() => {
