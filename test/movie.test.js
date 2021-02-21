@@ -1,11 +1,12 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const should = chai.should();
 const server = require('../app');
 
 chai.use(chaiHttp);
 
 let token,movieId;
+
+
 
 //Her descrip içinde birden fazla it() olabilir.Bunların içinde test yapabiliriz.
 //before fonk. ile testler başlamadan işlem yapabiliyoruz.
